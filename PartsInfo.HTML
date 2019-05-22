@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="Viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>PartsInfo</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="NavigationBar.css">
+	<link rel="stylesheet" href="scrollingarrow.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script type="text/javascript">
+		
+		$(window).on('scroll', function()
+		{
+			if($(window).scrollTop())
+			{
+				$('nav').addClass('black');
+			}
+			else
+			{
+				$('nav').removeClass('black');
+			}
+		})
+
+		$(window).scroll(function()
+		{
+    		$(".arrow").css("opacity", 1 - $(window).scrollTop() / 50); 
+  		});
+
+	</script>
+
+</head>
+<body>
+
+	<a href="#anchor1">  
+    <div class="arrow" id="arrow">
+        <span></span>
+       	<span></span>
+       	<span></span>
+    </div>
+    </a> 
+
+	<nav>
+		
+		<ul>
+			
+			<li><a href="#" class="active">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Portfolio</a></li>
+			<li><a href="#">Team</a></li>
+
+		</ul>
+
+	</nav>
+
+	<section class="sec1"></section>
+	<section class="secText">
+		
+		<h1>Processor/CPU</h1>
+		<p>
+			En central processor, eller CPU, är förmodligen den viktigaste komponenten i vilken dator som helst. Den hanterar grundläggande instruktioner <br> och fördelar de mer komplicerade uppgifterna till andra specifika marker för att få dem att göra vad de gör bäst. Det är kärnan i din dator, smartphone <br> eller surfplatta. och det är det som gör att hela enheten kör som den ska.
+		</p>
+
+	</section>
+
+	<section class="sec2"></section>
+	<section class="secText">
+
+	<h1>Moderkort</h1>
+	<p>
+		Ett moderkort ger anslutning mellan maskinvarukomponenterna på en dator, som processor (CPU), minne (RAM), hårddisk och grafikkort. Det finns flera typer av moderkort, utformade för att passa olika typer och storlekar av datorer.
+
+		Varje typ av moderkort är utformat för att fungera med specifika typer av processorer och minne, så att de inte kan arbeta med varje processor och typ av minne.
+	</p>
+
+	</section>
+
+	<section class="sec3"></section>
+	<section class="secText">
+
+	<h1>Internminne</h1>
+	<p>
+		RAM (Random Access Memory) är hårdvaran i en dator där operativsystemet (operativsystemet), applikationsprogrammen och data i aktuell användning hålls så att de snabbt kan nås av enhetens processor. RAM är huvudminnet i en dator, och det är mycket snabbare att läsa från och skriva till än andra typer av lagringsutrymmen, t.ex. en hårddisk (hårddisk), solid state drive (SSD) eller optisk enhet.
+	</p>
+
+	</section>
+
+	<section class="sec4"></section>
+	<section class="secText">
+
+	<h1>Hårddisk</h1>
+	<p>
+		En hårddisk är en icke-flyktig minnehårdvara som permanent lagrar och hämtar data på en dator. En hårddisk är en sekundär lagringsenhet som består av en eller flera tallrikar till vilka data skrivs med ett magnetiskt huvud, hela insidan av ett lufttätat hölje. Interna hårddiskar bor i en enhet, ansluts till moderkortet med en ATA-, SCSI- eller SATA-kabel och drivs av en anslutning till PSU-nätaggregatet.
+
+		Alla datorer har en hårddisk installerad i dem, som används för att lagra filer för operativsystemet, program och en användares personliga filer. En dator kan inte fungera utan en hårddisk installerad, eftersom det krävs att en fungerar korrekt.
+	</p>
+
+	</section>
+
+	<section class="sec5"></section>
+	<section class="secText">
+
+	<h1>Grafikkort</h1>
+	<p>
+		Ett grafikkort är en typ av bildskärmskort eller grafikkort som är installerat i de flesta datorer för att visa grafiska data med hög klarhet, färg, definition och övergripande utseende. Ett grafikkort ger högkvalitativ visuell visning genom att bearbeta och exekvera grafisk data med hjälp av avancerade grafiska tekniker, funktioner och funktioner. Ett grafikkort är också känt som grafikkort, grafikkontroller, grafikacceleratorkort eller grafikkort.
+	</p>
+
+	</section>
+
+</body>
+</html>
